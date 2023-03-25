@@ -14,9 +14,7 @@ function fillBox() {
     })
     box.innerHTML = temp;
 }
-const changeTurn = (){
-return turn === "X"?"O":"X";
-}
+
 fillBox();
 var flag = true;
 var arr2 = Array(9).fill(0)
@@ -24,14 +22,14 @@ box.addEventListener('click', function (e, id) {
     if (e.target.id === 'box') return;
     if(e.target.textContent.length === 1)return;
     if (flag === true) {
-        e.target.textContent = turn;
-        turn = changeTurn();
+        e.target.textContent = "X";
+//         turn = changeTurn();
         ting.play();
         flag = false;
         
     } else {
-        e.target.textContent = turn;
-        turn = changeTurn();
+        e.target.textContent = "O";
+//         turn = changeTurn();
         ting.play();
         flag = true;
     }

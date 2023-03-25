@@ -1,7 +1,7 @@
 var box = document.querySelector('#box')
 var button = document.querySelector('.button')
 var gameover = document.querySelector('.gameover')
-var ting = document.querySelector('.Ting')
+var ting = document.querySelector('.ting')
 
 
 var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8]
@@ -21,10 +21,12 @@ box.addEventListener('click', function (e, id) {
     if (e.target.id === 'box') return;
     if (flag === true) {
         e.target.textContent = "X";
+        ting.play();
         flag = false;
         
     } else {
         e.target.textContent = "O";
+        ting.play();
         flag = true;
     }
     

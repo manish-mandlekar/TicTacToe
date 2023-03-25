@@ -22,6 +22,7 @@ var flag = true;
 var arr2 = Array(9).fill(0)
 box.addEventListener('click', function (e, id) {
     if (e.target.id === 'box') return;
+    if(e.target.tectContent.length === 1)return;
     if (flag === true) {
         e.target.textContent = turn;
         turn = changeTurn();

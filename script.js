@@ -48,7 +48,7 @@ function checkWin(e) {
     if(count == 9){
         box.innerHTML = `<h1 id="raja"> GAME OVER</h1>
         <br>
-        <a id="reset" href="/">Reset</a>`
+        <a id="reset" href="/TicTacToe/">Reset</a>`
     }
 
     if (arr2[0] === "X" && arr2[1] === "X" && arr2[2] === "X") {

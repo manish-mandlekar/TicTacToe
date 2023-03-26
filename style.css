@@ -17,6 +17,18 @@ body{
     flex-wrap: wrap;
     display: flex;
 }
+#reset{
+    border: 2px solid black;
+    margin-left: 20px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: red;
+    
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
 button{
     width: 5vmax;
     height: 5vmax;

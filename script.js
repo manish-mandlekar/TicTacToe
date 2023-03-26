@@ -39,6 +39,17 @@ box.addEventListener('click', function (e, id) {
 })
 
 function checkWin(e) {
+     var count = 0;
+    arr2.forEach(elem=>{
+        if(typeof elem !=="number"){
+            count++;
+        }
+    })
+    if(count == 9){
+        box.innerHTML = `<h1 id="raja"> GAME OVER</h1>
+        <br>
+        <a id="reset" href="/">Reset</a>`
+    }
 
     if (arr2[0] === "X" && arr2[1] === "X" && arr2[2] === "X") {
         gameover.play();
